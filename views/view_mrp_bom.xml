@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_mrp_bom_form" model="ir.ui.view">
+    <field name="name">mrp.bom.form</field>
+    <field name="model">mrp.bom</field>
+    <field name="inherit_id" ref="ls_odoo_process_costing_manufacturing_patch.mrp_bom_form_view"/>
+    <field name="arch" type="xml">
+      <button name="action_spread_components" position="after">
+        <button name="compute_percentage" type="object" string="Calculate Percentage" class="oe_highlight"/>
+      </button>
+    </field>
+  </record>
+</odoo>
